@@ -1,9 +1,11 @@
 import streamlit as st
 import pandas as pd
 from inference import predict_bias
+from inference import interpret_bias_score
 
-st.set_page_config(page_title="EquiLex - Policy Bias Analyzer", layout="wide")
-st.title("🧠 EquiLex: Policy Bias Analyzer")
+
+st.set_page_config(page_title="Code Purple - Policy Bias Analyzer", layout="wide")
+st.title("Code Purple - Policy Bias Analyzer")
 
 st.markdown("Upload a policy document or paste it below to get an overall bias score (0 = neutral, 1 = highly biased).")
 
@@ -33,6 +35,8 @@ if uploaded_file or user_input:
 
         scores = predict_bias(paragraphs)
         avg_score = float(sum(scores)) / len(scores)
+        report = interpret_bias_score(avg_score)
 
         st.subheader("📊 Bias Analysis Result")
         st.metric("Overall Bias Score", f"{avg_score:.3f}", help="Score ranges from 0 (no bias) to 1 (highly biased)")
+        st.write(report)
