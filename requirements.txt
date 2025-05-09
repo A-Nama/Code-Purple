@@ -5,3 +5,4 @@ torch
 streamlit
 pandas
 nltk
+python-dotenv
