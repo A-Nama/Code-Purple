@@ -1,1 +1,1 @@
-# EquiLex
+# Code Purple
