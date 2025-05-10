@@ -23,7 +23,7 @@ The world is shifting. As we push for progress, unconscious and systemic biases 
 
 ## 🌐 Try It Live
 
-👉 [Link to the App](https://your-app-link-here.com) *(replace with actual link)*
+👉 [Link to the App](https://codepurple.streamlit.app/) 
 
 ## 📦 How to Run Locally
 
