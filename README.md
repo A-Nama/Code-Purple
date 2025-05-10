@@ -52,8 +52,8 @@ We discovered that:
 
 ## ✨ Vision
 
-**Code Purple** is an open call to changemakers:  
-_“Make inclusivity real—not just in writing, but in action.”_
+- Help create more policies that are gender inclusive
+- Get more datasets so that we can train the model better and make this initiative even more successful
 
 ---
 
