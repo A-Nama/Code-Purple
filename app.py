@@ -2,35 +2,6 @@ import streamlit as st
 import pandas as pd
 from inference import predict_bias, interpret_bias_score
 
-EQUALITY_PURPLE = "#9999FF"
-
-st.set_page_config(page_title="Code Purple - Policy Bias Analyzer", layout="wide")
-
-st.markdown(
-    f"""
-    <style>
-        html, body, [class*="css"]  {{
-            font-family: 'Segoe UI', sans-serif;
-            background-color: {EQUALITY_PURPLE};
-            color: white;
-        }}
-        .stTextArea textarea, .stFileUploader, .stTextInput {{
-            background-color: white !important;
-            color: black !important;
-        }}
-        .stButton button {{
-            background-color: white;
-            color: black;
-            font-weight: bold;
-        }}
-        .stMetric {{
-            color: white;
-        }}
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
 st.title("💜 Code Purple - Policy Bias Analyzer")
 
 st.markdown("Upload a policy document or paste it below to get an overall bias score (0 = neutral, 1 = highly biased).")
