@@ -2,6 +2,12 @@ import streamlit as st
 import pandas as pd
 from inference import predict_bias, interpret_bias_score
 
+
+st.set_page_config(
+    page_title="Code Purple - Policy Bias Analyzer",
+    layout="wide",
+    initial_sidebar_state="auto"
+)
 st.title("💜 Code Purple - Policy Bias Analyzer")
 
 st.markdown("Upload a policy document or paste it below to get an overall bias score (0 = neutral, 1 = highly biased).")
